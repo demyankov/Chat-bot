@@ -25,18 +25,19 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier . --write",
     "prepare": "husky install"
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "npm run lint"
-    ]
-  },
+  },  
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ]
+  },
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -48,6 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.1",
@@ -62,7 +68,9 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.11",
     "husky": "^8.0.3",
+    "node-sass": "^7.0.3",
     "prettier": "^2.8.2",
+    "react-css-modules": "^4.7.11",
     "typescript": "^4.9.4"
   }
 }
