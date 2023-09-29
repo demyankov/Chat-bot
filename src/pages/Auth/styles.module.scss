@@ -1,0 +1,78 @@
+@import '../../styles/shared/breakpoints.scss';
+
+.main {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  @include breakpoint(lg) {
+    flex-direction: row;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-7);
+  width: 100%;
+  max-width: var(--max-width);
+  min-height: 100vh;
+}
+
+.auth {
+  @include breakpoint(lg) {
+    flex-basis: 50%;
+    align-items: center;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutWrapper {
+  @include breakpoint(lg) {
+    flex-basis: 50%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutContent {
+  @include breakpoint(lg) {
+    display: flex;
+  }
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  justify-content: center;
+  min-height: 100%;
+  padding: var(--spacing-6);
+
+  & > svg {
+    position: relative;
+    left: 50%;
+    z-index: 9999;
+    width: 85%;
+    transform: translateX(-50%);
+  }
+}
+
+.logo {
+  position: absolute;
+  top: var(--spacing-6);
+  left: var(--spacing-6);
+  z-index: 9999;
+}
+
+.socialList {
+  display: flex;
+  gap: var(--spacing-4);
+
+  svg {
+    width: var(--spacing-2);
+    height: var(--spacing-2);
+  }
+}

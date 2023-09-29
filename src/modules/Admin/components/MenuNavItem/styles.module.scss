@@ -1,0 +1,40 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.links {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+  padding: var(--spacing-7);
+  font-size: var(--extraLargeRegular-font-size);
+  font-weight: var(--extraLargeRegular-font-weight);
+  line-height: var(--extraLargeRegular-line-height);
+  color: var(--font-color-base);
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 4px;
+
+  & > svg path {
+    stroke: var(--font-color-disabled);
+  }
+
+  &:hover {
+    background-color: var(--background-color-secondary);
+
+    & > svg path {
+      stroke: var(--background-color-button-hover-secondary);
+    }
+  }
+}
+
+.active {
+  background-color: var(--background-color-secondary);
+
+  & > svg path {
+    stroke: var(--background-color-button-hover-secondary);
+  }
+}
+
+/* stylelint-disable-next-line plugin/stylelint-group-selectors */
+.activeSecondary {
+  background-color: var(--background-color-secondary);
+}

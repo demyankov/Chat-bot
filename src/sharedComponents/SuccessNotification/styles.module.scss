@@ -1,0 +1,51 @@
+.notification {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid rgb(77, 184, 77);
+  border-left-width: 5px;
+  border-radius: 4px;
+  transition: opacity 0.5s ease;
+
+  &fade-out {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  color: transparent;
+
+  &::before {
+    font-size: 15px;
+    color: rgb(77, 184, 77);
+    content: '\2713';
+  }
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: var(--normalRegular-font-size);
+  font-weight: var(--normalMedium-font-weight);
+}
+
+.text {
+  font-size: var(--normalRegular-font-size);
+  color: var(--font-color-hover);
+  white-space: nowrap;
+}
+
+.picture {
+  position: relative;
+  top: -10px;
+}

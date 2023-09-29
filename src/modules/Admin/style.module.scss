@@ -1,0 +1,13 @@
+%input {
+  flex: 1;
+  width: 100%;
+  max-height: 40px;
+  padding: 16px 20px;
+  border: 1px solid var(--background-color-inactive);
+  border-radius: 4px;
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--background-color-button-secondary);
+  }
+}

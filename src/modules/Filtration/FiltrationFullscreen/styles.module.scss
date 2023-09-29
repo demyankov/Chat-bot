@@ -1,0 +1,74 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-4);
+}
+
+.column {
+  @include breakpoint(xs) {
+    flex-basis: 70%;
+  }
+
+  @include breakpoint(sm) {
+    flex-basis: calc((100% - 2.5 * var(--spacing-4)) / 3);
+  }
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputTextTitle {
+  margin-bottom: var(--spacing-7);
+}
+
+.inputWrapper {
+  display: flex;
+  gap: var(--spacing-7);
+  max-width: 100%;
+}
+
+.groupName {
+  padding-bottom: var(--spacing-8);
+}
+
+.groupItem {
+  padding: var(--spacing-8) 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.filterName {
+  display: flex;
+  gap: var(--spacing-9);
+  align-items: center;
+  min-width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.filterNameText {
+  flex: 1;
+  text-align: start;
+}
+
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
+  padding-top: var(--spacing-8);
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-4);
+}

@@ -1,0 +1,16 @@
+.profileName {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #326789;
+  border-radius: 50%;
+
+  span {
+    line-height: 100%;
+  }
+}

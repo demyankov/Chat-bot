@@ -1,0 +1,33 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: var(--max-width);
+  height: 100vh;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    'header header' auto 1fr
+    'adminNav content' auto 1fr;
+}
+
+.main {
+  position: absolute;
+  top: 80px;
+  left: 260px;
+  z-index: 8;
+  grid-area: content;
+  width: calc(100% - 260px);
+  height: calc(100% - 80px);
+  max-height: 100vh;
+  padding: var(--spacing-5) var(--spacing-3);
+  overflow: hidden;
+}

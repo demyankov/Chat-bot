@@ -1,0 +1,21 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  grid-area: header;
+  gap: var(--spacing-6);
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: var(--spacing-7) var(--spacing-5);
+
+  p {
+    font-size: var(--extraLargeRegular-font-size);
+    font-weight: var(--extraLargeRegular-font-weight);
+    line-height: var(--extraLargeRegular-line-height);
+  }
+}

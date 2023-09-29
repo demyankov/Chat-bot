@@ -1,0 +1,12 @@
+.imageWrapper {
+  display: flex;
+  gap: var(--spacing-7);
+  padding: var(--spacing-8) var(--spacing-6);
+}
+
+.image {
+  width: var(--spacing-3);
+  height: var(--spacing-3);
+  overflow: hidden;
+  border-radius: var(--spacing-9);
+}

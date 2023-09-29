@@ -1,0 +1,11 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.list {
+  @include breakpoint(lg) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  display: flex;
+  flex-flow: wrap column;
+  gap: var(--spacing-7);
+}

@@ -1,0 +1,37 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+  background: rgba(#000000, 0.4);
+  opacity: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  align-items: center;
+  justify-content: space-between;
+  max-width: 337px;
+  padding: var(--spacing-6);
+  background-color: #ffffff;
+
+  div {
+    display: flex;
+    gap: var(--spacing-7);
+  }
+
+  button {
+    border-radius: var(--spacing-9);
+  }
+
+  p {
+    text-align: center;
+  }
+}

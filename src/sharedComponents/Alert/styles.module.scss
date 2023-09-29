@@ -1,0 +1,16 @@
+.alert {
+  padding: var(--spacing-8);
+  border-style: solid;
+  border-width: 1px;
+
+  &.error {
+    color: var(--font-color-error);
+    background: var(--backgroundWarning);
+    border-color: var(--font-color-error);
+  }
+
+  .message {
+    font-size: var(--normalRegular-font-size);
+    font-weight: 600;
+  }
+}

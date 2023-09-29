@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.wrapper {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: space-between;
+  margin-top: var(--spacing-6);
+}
+
+.itemWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.optionsInputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
+}
+
+.optionsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-9);
+}
+
+.options {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+  margin-bottom: var(--spacing-7);
+}
+
+.plusIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--spacing-3);
+  aspect-ratio: 1/1;
+  background-color: var(--background-color-secondary);
+  border-radius: 4px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: var(--spacing-7);
+  justify-content: flex-end;
+}
+
+.checkboxWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--spacing-9);
+  justify-content: flex-end;
+  margin-bottom: var(--spacing-7);
+}
+
+.textArea {
+  min-height: 150px;
+}

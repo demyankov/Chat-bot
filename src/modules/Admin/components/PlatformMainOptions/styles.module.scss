@@ -1,0 +1,91 @@
+%input {
+  flex: 1;
+  width: 100%;
+  max-height: 40px;
+  padding: 16px 20px;
+  border: 1px solid var(--background-color-inactive);
+  border-radius: 4px;
+}
+
+.form {
+  display: grid;
+  grid-template:
+    'name priceWrapper' min-content
+    'link file' min-content
+    'description file' minmax(160px, min-content)
+    'saveBtn saveBtn' min-content / 1.3fr 1.2fr;
+  grid-gap: 1rem;
+}
+
+.name {
+  grid-area: name;
+}
+
+.link {
+  grid-area: link;
+}
+
+.description {
+  grid-area: description;
+}
+
+.priceWrapper {
+  grid-area: priceWrapper;
+}
+
+.file {
+  grid-area: file;
+}
+
+.label,
+.priceLabel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
+  height: 100%;
+}
+
+.price {
+  display: flex;
+  gap: var(--spacing-8);
+
+  & label {
+    max-width: 50%;
+  }
+}
+
+.input {
+  @extend %input;
+}
+
+.textarea {
+  @extend %input;
+}
+
+.saveBtn {
+  display: flex;
+  grid-area: saveBtn;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  width: 120px;
+  height: 34px;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:disabled {
+    transform: scale(1);
+  }
+}
+
+.errorMessage {
+  color: var(--font-color-error);
+}
+
+.switcherBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}

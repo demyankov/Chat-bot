@@ -1,0 +1,95 @@
+%button {
+  padding: var(--spacing-8) var(--spacing-5);
+  font-size: var(--normalRegular-font-size);
+  font-weight: var(--normalRegular-font-weight);
+  line-height: var(--normalRegular-line-height);
+  color: var(--font-color-base);
+  text-align: center;
+  background-color: var(--background-color-base);
+  border: 1px solid var(--border-color);
+  border-radius: var(--spacing-10);
+
+  &:hover {
+    color: var(--font-color-hover);
+    border-color: var(--border-color-hover);
+  }
+
+  &:active {
+    border-color: var(--border-color);
+  }
+
+  &:focus {
+    color: var(--font-color-focused);
+    border-color: var(--border-color);
+  }
+
+  &:disabled {
+    background-color: var(--background-color-button-disabled);
+    border-color: var(--border-color-disabled);
+  }
+}
+
+.button {
+  @extend %button;
+}
+
+.buttonDark {
+  @extend %button;
+  color: var(--font-color-invert);
+  background-color: var(--background-color-button-invert);
+
+  &:hover {
+    color: var(--font-color-invert);
+    background-color: var(--background-color-button-hover);
+  }
+
+  &:focus {
+    color: var(--font-color-invert);
+  }
+
+  &:disabled {
+    color: var(--font-color-invert);
+    background-color: var(--background-color-button-disabled);
+  }
+}
+
+.buttonBright {
+  @extend %button;
+  color: var(--font-color-invert);
+  background-color: var(--background-color-bright);
+  border: 1px solid var(--background-color-bright);
+
+  &:hover {
+    color: var(--font-color-invert);
+    background-color: var(--background-color-button-hover);
+  }
+
+  &:focus {
+    color: var(--font-color-invert);
+  }
+
+  &:disabled {
+    color: var(--font-color-invert);
+    background-color: var(--background-color-button-disabled);
+  }
+}
+
+.invertButton {
+  @extend %button;
+  color: var(--font-color-invert);
+  background-color: var(--background-color-button-secondary);
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--font-color-invert);
+    background-color: var(--background-color-button-hover);
+    border-color: var(--border-color-hover);
+  }
+
+  &:disabled {
+    background-color: var(--background-color-button-disabled);
+    border-color: var(--border-color-disabled);
+  }
+}

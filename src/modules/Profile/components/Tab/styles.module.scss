@@ -1,0 +1,9 @@
+.tab {
+  padding: var(--spacing-9) var(--spacing-7);
+  font-size: var(--largeRegular-font-size);
+
+  &:first-of-type {
+    padding-left: 0;
+    border-right: 1px solid var(--border-color-grid);
+  }
+}

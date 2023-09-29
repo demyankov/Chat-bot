@@ -1,0 +1,106 @@
+.container {
+  width: 510px;
+}
+
+.settings {
+  display: flex;
+  translate: 10%;
+
+  &__wrapper {
+    margin: 25px 0;
+  }
+
+  &__title {
+    margin: 5px 0;
+    font-size: var(--spacing-6);
+    font-weight: var(--normalBold-font-size);
+    line-height: 130%;
+    color: var(--font-color-base);
+  }
+
+  &__subtitle {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: var(--normalRegular-font-size);
+    line-height: 150%;
+    color: var(--font-color-base);
+  }
+
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  &__title {
+    font-size: var(--spacing-6);
+    font-weight: var(--normalBold-font-size);
+    color: var(--font-color-base);
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: var(--normalBold-font-size);
+    color: #777777;
+  }
+
+  &__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__button {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: var(--normalRegular-font-size);
+    line-height: 150%;
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin: 15px;
+    cursor: pointer;
+    background: url('../../assets/uploaded.svg');
+    background-size: cover;
+  }
+}
+
+.form {
+  font-size: var(--spacing-7);
+  font-weight: var(--normalRegular-font-size);
+  line-height: 145%;
+  color: #333333;
+
+  &__title {
+    padding: 5px 0;
+    margin-top: 15px;
+    font-size: var(--spacing-7);
+    font-weight: var(--normalRegular-font-size);
+    line-height: 145%;
+    color: #333333;
+  }
+
+  &__button {
+    width: 240px;
+    height: 56px;
+    margin: 25px 0;
+    color: var(--background-color);
+    letter-spacing: 0.0002em;
+    background: var(--font-color-base);
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background: var(--font-color-hover);
+    }
+
+    &:disabled {
+      background: var(--font-color-disabled);
+    }
+  }
+}
+
+.span {
+  margin: 20px;
+}

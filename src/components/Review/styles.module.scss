@@ -1,0 +1,63 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+%text {
+  flex: 0 1 150px;
+  font-size: var(--smallRegular-line-height);
+  font-weight: var(--smallRegular-font-weight);
+  line-height: var(--largeRegular-line-height);
+}
+
+.review {
+  @include breakpoint(sm) {
+    width: 560px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  width: 300px;
+  height: 100%;
+  padding: var(--spacing-5);
+  margin-right: var(--spacing-7);
+  background-color: var(--background-color-review-card);
+  border-radius: 8px;
+}
+
+.textOpened {
+  @extend %text;
+  height: auto;
+}
+
+.partialText {
+  @extend %text;
+  height: 150px;
+  overflow: hidden;
+}
+
+.author {
+  font-size: var(--normalBold-font-size);
+  font-weight: var(--normalBold-font-weight);
+  line-height: var(--normalBold-line-height);
+}
+
+.rating {
+  display: flex;
+  gap: var(--spacing-7);
+}
+
+.footerWithButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerWithoutButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.openTextBtn {
+  color: var(--font-color-second-accent);
+}
+
+.date {
+  align-self: flex-end;
+}

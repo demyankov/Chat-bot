@@ -1,0 +1,46 @@
+.collapse {
+  position: relative;
+  height: fit-content;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: var(--spacing-8) var(--spacing-5);
+  cursor: pointer;
+  background-color: var(--background-color-secondary);
+  transition: background-color 0.2s, opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.titleText {
+  flex: 1 1 100%;
+  font-size: var(--largeRegular-font-size);
+  font-weight: var(--largeRegular-font-weight);
+  line-height: var(--largeRegular-line-height);
+  color: var(--font-color-second-accent);
+}
+
+.icon {
+  flex: 0 0 24px;
+}
+
+.child {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 0;
+  padding: 0 var(--spacing-5);
+  overflow: hidden;
+  transition: height 1s ease;
+
+  &.expandedChild {
+    height: auto;
+    padding: var(--spacing-5);
+  }
+}

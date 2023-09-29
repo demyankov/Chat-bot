@@ -1,0 +1,7 @@
+.platformsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-7);
+  height: 100%;
+  overflow: auto;
+}

@@ -1,0 +1,107 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  width: 100%;
+  max-width: 495px;
+  padding: 0 var(--spacing-7);
+  border: none;
+
+  .inputGroupWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+  }
+
+  .remindPassword {
+    color: var(--additional-color);
+  }
+
+  .remindPasswordWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .socialWrapper {
+    display: flex;
+    gap: var(--spacing-7);
+  }
+
+  .sideCenter {
+    overflow: hidden;
+    font-size: var(--normalBold-font-size);
+    font-weight: var(--largeRegular-font-weight);
+    text-align: center;
+
+    &::before,
+    &::after {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      vertical-align: middle;
+      content: '';
+      background-color: var(--font-color-disabled);
+    }
+
+    &::before {
+      left: -14px;
+      margin-left: -100%;
+    }
+
+    &::after {
+      right: -14px;
+      margin-right: -100%;
+    }
+  }
+
+  .license {
+    color: var(--additional-color);
+  }
+
+  .enter {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: center;
+    font-size: var(--largeRegular-font-size);
+    line-height: var(--largeRegular-line-height);
+
+    & > a {
+      font-size: inherit;
+      line-height: inherit;
+      color: var(--additional-color);
+    }
+  }
+
+  .error {
+    display: flex;
+    gap: var(--spacing-9);
+    align-items: center;
+    font-size: var(--smallRegular-font-size);
+    line-height: var(--smallRegular-line-height);
+    color: var(--background-color-button-hover);
+  }
+
+  .buttonWrapper {
+    display: flex;
+    gap: var(--spacing-7);
+  }
+
+  .buttonSecondary {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--font-color-hover);
+    }
+  }
+}
+
+.text {
+  color: var(--background-color-button-hover);
+}

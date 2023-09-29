@@ -1,0 +1,21 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.characteristicsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  width: 100%;
+}
+
+.characteristicsTitle {
+  font-size: var(--H3-font-size);
+  font-weight: var(--H3-font-weight);
+  line-height: var(--H3-line-height);
+  color: var(--font-color-base);
+}
+
+.characteristicsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}

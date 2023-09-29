@@ -1,0 +1,57 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.currentPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 24px;
+  margin: 10px;
+  font-size: var(--spacing-7);
+  font-style: normal;
+  line-height: var(--normalMedium-line-height);
+  color: var(--font-color-disabled);
+  letter-spacing: 0.0002em;
+  background-color: transparent;
+  border: none;
+
+  &:disabled {
+    color: var(--font-color-disabled);
+  }
+}
+
+.currentPage.active {
+  font-weight: 700;
+  color: var(--font-color-base);
+  border-bottom: 2px solid var(--border-color);
+  scroll-behavior: smooth;
+}
+
+.prevArrow,
+.nextArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 24px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+
+  &:disabled {
+    color: var(--font-color-disabled);
+  }
+}
+
+.prevArrow::before {
+  content: '<';
+}
+
+.nextArrow::before {
+  content: '>';
+}

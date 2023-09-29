@@ -1,0 +1,31 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  grid-area: nav;
+  width: 320px;
+}
+
+.link {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+  padding: var(--spacing-8);
+  font-size: var(--largeRegular-font-size);
+  font-weight: var(--normalRegular-font-size);
+  line-height: var(--largeRegular-line-height);
+  color: #4c4c4c;
+
+  &:hover,
+  &:active {
+    color: #4c4c4c;
+    cursor: pointer;
+    background-color: #f3f7fa;
+    border-radius: 0 8px 8px 0;
+
+    path {
+      color: #4c4c4c;
+    }
+  }
+}

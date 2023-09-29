@@ -1,0 +1,48 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.breadcrumbsWrapper {
+  width: 100%;
+  margin-bottom: 32px;
+  overflow-x: auto;
+}
+
+.breadcrumbs {
+  @include breakpoint(sm) {
+    display: flex;
+  }
+
+  @include breakpoint(md) {
+    gap: var(--spacing-7);
+    min-height: 21px;
+  }
+  display: none;
+  flex-direction: row;
+  gap: var(--spacing-9);
+}
+
+.crumbItem {
+  @include breakpoint(md) {
+    gap: var(--spacing-7);
+  }
+  display: flex;
+  gap: var(--spacing-9);
+  align-items: center;
+}
+
+.crumbLink {
+  font-size: var(--normalRegular-font-size);
+  font-weight: var(--normalRegular-font-weight);
+  line-height: var(--normalRegular-line-height);
+  cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.lastLink {
+  color: var(--font-color-base);
+  cursor: default;
+  opacity: 1;
+}

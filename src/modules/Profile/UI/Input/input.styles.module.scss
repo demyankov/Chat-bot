@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
+  width: 100%;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-6);
+  background-color: var(--background-color-fields);
+  border: 1px solid var(--background-color-fields);
+  border-radius: var(--spacing-9);
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    border: 1px solid var(--border-color-hover-input);
+  }
+
+  &:active,
+  &:focus-within {
+    border: 1px solid var(--border-color-focused-input);
+  }
+
+  &:disabled input {
+    color: var(--font-color-disabled);
+  }
+}
+
+.marginRight {
+  margin-right: var(--spacing-8);
+}
+
+.marginLeft {
+  margin-left: var(--spacing-8);
+}
+
+.input {
+  width: 100%;
+  padding: var(--spacing-7) 0;
+  margin: 0;
+  background-color: inherit;
+  outline: none;
+}
+
+.warningInput {
+  background-color: var(--background-color-warning);
+  border: 1px solid var(--border-color-warning);
+}
+
+.warningText {
+  position: absolute;
+  bottom: calc(-1.25 * var(--spacing-7));
+  left: 0;
+  display: flex;
+  gap: var(--spacing-9);
+  align-items: center;
+  font-size: var(--smallRegular-font-size);
+  line-height: var(--smallRegular-line-height);
+  color: var(--font-color-warning);
+}

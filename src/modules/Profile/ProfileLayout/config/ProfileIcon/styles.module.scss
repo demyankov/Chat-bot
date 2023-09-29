@@ -1,0 +1,26 @@
+.name {
+  font-size: var(--largeRegular-font-size);
+  font-weight: var(--largeRegular-font-weight);
+  text-transform: capitalize;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  background-color: var(--background-color-bright);
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.profile {
+  display: flex;
+  gap: var(--spacing-5);
+  align-items: center;
+}

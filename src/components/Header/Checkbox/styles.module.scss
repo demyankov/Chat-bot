@@ -1,0 +1,43 @@
+.label {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+}
+
+.input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.single {
+  font-weight: var(--H6-font-weight);
+}
+
+.span::before {
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% 70%;
+  border: 1px solid #4c4c4c;
+  border-radius: 4px;
+}
+
+input:checked + .span::before {
+  background-color: #326789;
+  background-image: url('../../../assets/icons/checkBoxIcon.svg');
+  border-color: #326789;
+}

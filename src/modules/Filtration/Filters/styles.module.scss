@@ -1,0 +1,24 @@
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  padding: var(--spacing-10) 0;
+}
+
+.filterName {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: var(--spacing-7);
+  max-width: 100%;
+}
+
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
+}

@@ -1,0 +1,42 @@
+@import '../../style.module.scss';
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
+  height: 100%;
+}
+
+.fileInputDefault {
+  display: none;
+}
+
+.fileInputCustom {
+  @extend %input;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  cursor: pointer;
+  background-color: var(--background-color);
+  background-image: url('../../assets/file_input_background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    border: 1px solid var(--background-color-button-secondary);
+  }
+}
+
+.fileInputWrapper {
+  height: 100%;
+}
+
+.previewImg {
+  width: 200px;
+}
+
+.errorMessage {
+  color: var(--font-color-error);
+}

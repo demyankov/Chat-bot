@@ -1,0 +1,30 @@
+.outlet {
+  width: 100%;
+  padding-top: var(--spacing-9);
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: var(--spacing-7);
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  gap: var(--spacing-6);
+  max-width: var(--max-width);
+}
+
+.title {
+  width: 100%;
+  margin-bottom: var(--spacing-7);
+  font-weight: var(--normalSemibold-font-size);
+}
+
+.tabsWrapper {
+  display: flex;
+}

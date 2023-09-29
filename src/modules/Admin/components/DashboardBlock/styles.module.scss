@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-basis: 32%;
+  gap: var(--spacing-8);
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-5);
+  cursor: pointer;
+  background-color: var(--background-color-cards);
+  border-radius: 4px;
+
+  & > svg path {
+    stroke: var(--font-color-base);
+  }
+
+  &:hover {
+    background-color: #f3f7fa;
+
+    & > svg path {
+      stroke: var(--background-color-button-hover-secondary);
+    }
+  }
+}
+
+.text {
+  font-size: var(--largeRegular-font-size);
+  font-weight: var(--largeRegular-font-weight);
+  line-height: var(--largeRegular-line-height);
+  white-space: nowrap;
+}

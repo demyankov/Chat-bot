@@ -1,0 +1,50 @@
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid rgb(223, 90, 90);
+  border-left-width: 5px;
+  border-radius: 4px;
+  transition: opacity 0.5s ease;
+
+  &fade-out {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: rgb(223, 90, 90);
+  background-color: transparent;
+  border: 2px solid rgb(223, 90, 90);
+  border-radius: 50%;
+}
+
+.wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: var(--normalRegular-font-size);
+  font-weight: var(--normalMedium-font-weight);
+}
+
+.text {
+  font-size: var(--normalRegular-font-size);
+  color: var(--font-color-hover);
+  white-space: nowrap;
+}
+
+.picture {
+  position: relative;
+  top: -10px;
+}

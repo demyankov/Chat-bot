@@ -1,0 +1,34 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.filterItemWrapper {
+  display: flex;
+  gap: var(--spacing-9);
+  justify-content: space-between;
+  width: 100%;
+  color: var(--font-color-hover);
+}
+
+.name {
+  display: flex;
+  gap: var(--spacing-9);
+  width: 60%;
+}
+
+.delimeterWrapper {
+  display: flex;
+  flex: 1 1 10%;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+
+.delimeter {
+  width: 100%;
+  height: 2px;
+  background: url('../../assets/images/delimeter_background.svg');
+  background-size: 4px 100%;
+}
+
+.filters {
+  display: flex;
+  width: 40%;
+}

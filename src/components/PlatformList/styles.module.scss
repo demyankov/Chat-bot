@@ -1,0 +1,12 @@
+.platformList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-7);
+}
+
+.profileList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-gap: 20px;
+  gap: var(--spacing-7);
+}

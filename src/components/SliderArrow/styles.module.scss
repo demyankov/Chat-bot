@@ -1,0 +1,43 @@
+%sliderButton {
+  width: 44px;
+  height: 44px;
+  color: #000000;
+  cursor: pointer;
+  background-color: var(--background-color-slider-arrow);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  opacity: 1;
+
+  &:hover {
+    background-color: var(--background-color-slider-arrow-hover);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.prevArrow {
+  @extend %sliderButton;
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  background-image: url('../../assets/icons/slider_buttons/arrow_left.svg');
+
+  &:active {
+    transform: translateX(2px) scale(0.95);
+  }
+}
+
+.nextArrow {
+  @extend %sliderButton;
+  position: absolute;
+  bottom: -70px;
+  left: var(--spacing-2);
+  background-image: url('../../assets/icons/slider_buttons/arrow_right.svg');
+
+  &:active {
+    transform: translateX(-2px) scale(0.95);
+  }
+}

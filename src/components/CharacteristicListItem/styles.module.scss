@@ -1,0 +1,41 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.filterWrapper {
+  @include breakpoint(md) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    width: 47%;
+    min-width: 320px;
+  }
+  width: 100%;
+  padding: var(--spacing-7);
+}
+
+.filterTitle {
+  font-size: var(--largeBold-font-size);
+  font-weight: var(--largeBold-font-weight);
+  line-height: var(--largeBold-line-height);
+  color: var(--font-color-base);
+}
+
+.characteristicsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  align-items: space-between;
+}
+
+.characteristicsListItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  width: 100%;
+  font-size: var(--normalRegular-font-size);
+  font-weight: var(--normalRegular-font-weight);
+  line-height: var(--normalRegular-line-height);
+}
+
+.filterRow {
+  display: flex;
+}

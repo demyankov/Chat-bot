@@ -1,0 +1,131 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.menu {
+  &__container {
+    @include breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: var(--spacing-6) var(--spacing-5);
+      background-color: #f3f7fa;
+      border-radius: var(--spacing-8);
+    }
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  &__nav {
+    @include breakpoint(md) {
+      display: flex;
+      flex: 1;
+      gap: 40px;
+      align-items: center;
+      padding: 0;
+    }
+    flex-direction: row;
+  }
+}
+
+.buttonsWrapper {
+  @include breakpoint(md) {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-8);
+    padding: 0;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
+}
+
+ul {
+  @include breakpoint(md) {
+    flex-direction: row;
+    gap: var(--spacing-5);
+  }
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-7);
+}
+
+.links {
+  font-size: var(--normalBold-font-size);
+  font-style: normal;
+  font-weight: var(--largeRegular-font-weight);
+  line-height: var(--normalRegular-line-height);
+  color: var(--font-color-base);
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--font-color-hover);
+    cursor: pointer;
+  }
+}
+
+.enter {
+  @include breakpoint(md) {
+    width: 105px;
+    padding: var(--spacing-9);
+  }
+
+  @include breakpoint(xl) {
+    padding: var(--spacing-7) var(--spacing-5);
+  }
+  gap: var(--spacing-8);
+  align-items: center;
+  width: 50%;
+  padding: var(--spacing-7) var(--spacing-5);
+  font-size: var(--normalBold-font-size);
+  font-style: normal;
+  font-weight: var(--largeRegular-font-weight);
+  line-height: var(--normalRegular-line-height);
+  color: var(--font-color-base);
+  background-color: var(--background-color-base);
+  border: 1px solid var(--font-color-base);
+
+  &:active,
+  &:hover {
+    color: var(--font-color-hover);
+    cursor: pointer;
+    border: 1px solid var(--font-color-hover);
+  }
+
+  &:disabled {
+    color: var(--font-color-disabled);
+    border: 1px solid var(--font-color-disabled);
+  }
+}
+
+.registration {
+  @include breakpoint(md) {
+    width: 172px;
+    padding: var(--spacing-9);
+  }
+
+  @include breakpoint(xl) {
+    padding: var(--spacing-7) var(--spacing-5);
+  }
+  gap: var(--spacing-8);
+  align-items: center;
+  width: 50%;
+  padding: var(--spacing-7) var(--spacing-5);
+  font-size: var(--normalBold-font-size);
+  font-style: normal;
+  font-weight: var(--largeRegular-font-weight);
+  line-height: var(--normalRegular-line-height);
+  color: var(--font-color-invert);
+  background-color: var(--font-color-base);
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background: var(--font-color-hover);
+  }
+
+  &:disabled {
+    background: var(--font-color-disabled);
+  }
+}

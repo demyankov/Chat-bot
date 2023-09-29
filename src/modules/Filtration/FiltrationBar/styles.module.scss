@@ -1,0 +1,15 @@
+@import '/src/styles/shared/breakpoints.scss';
+
+.wrapper {
+  @include breakpoint(sm) {
+    display: flex;
+    flex-basis: 33%;
+  }
+
+  @include breakpoint(lg) {
+    flex-basis: 25%;
+  }
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}

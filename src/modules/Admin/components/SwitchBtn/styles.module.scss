@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.switcher {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  cursor: pointer;
+  background-color: var(--background-color-inactive);
+  border-radius: 14px;
+  transition: background-color 0.2s;
+
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    content: '';
+    background-color: var(--background-color);
+    border-radius: 50%;
+    transition: left 0.2s;
+  }
+
+  &.toggled {
+    background-color: var(--background-color-button-secondary);
+
+    &::before {
+      left: 20px;
+    }
+  }
+}
+
+.input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.prefix {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 5rem;
+  margin-right: 20px;
+  color: var(--font-color-disabled);
+}
+
+.toggledPrefix {
+  color: var(--font-color-second-accent);
+}

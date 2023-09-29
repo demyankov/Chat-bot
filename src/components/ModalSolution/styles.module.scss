@@ -1,0 +1,146 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #9c9c9ca1;
+  opacity: 1;
+  backdrop-filter: blur(3px);
+}
+
+.title {
+  font-size: var(--H5-line-height);
+  color: var(--font-color-base);
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 804px;
+  padding: var(--spacing-5);
+  background: var(--border-color-invert);
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.picture {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: var(--spacing-7);
+  height: var(--spacing-7);
+}
+
+.form {
+  width: 562px;
+  padding: var(--spacing-5) 0;
+}
+
+.wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: var(--spacing-8) 0;
+  text-align: end;
+}
+
+.star {
+  color: #eb0d3f;
+}
+
+.text {
+  flex-shrink: 0;
+  width: 23%;
+  font-size: var(--normalRegular-font-size);
+  color: #121211;
+  white-space: nowrap;
+}
+
+.input {
+  width: 100%;
+  height: 56px;
+}
+
+.inputMask {
+  flex-grow: 1;
+  width: 100%;
+  height: 56px;
+  padding: 0 var(--spacing-6);
+  background-color: transparent;
+  border: 1px solid var(--background-color-fields);
+  border-radius: var(--spacing-9);
+}
+
+.field::placeholder,
+.inputMask::placeholder {
+  color: #b3b3b3;
+}
+
+.btn {
+  align-items: center;
+  justify-content: space-between;
+  height: 43px;
+  margin: var(--spacing-5) 0;
+  font-size: var(--largeBold-font-size);
+  background-color: #e65c4f;
+}
+
+.agreement {
+  font-size: var(--normalRegular-font-size);
+  color: var(--background-Button-Hover);
+  text-align: initial;
+}
+
+.license {
+  font-size: var(--normalRegular-font-size);
+  color: var(--border-color-focused-input);
+}
+
+.wrapper {
+  position: relative;
+  left: 24%;
+  max-width: 430px;
+}
+
+.message {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 392px;
+  height: 280px;
+  padding: var(--spacing-4);
+  text-align: center;
+  background: var(--border-color-invert);
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.titleMes {
+  padding-bottom: 10px;
+  font-size: var(--H1-font-size);
+  color: #326789;
+}
+
+.subtitle {
+  font-size: var(--H6-font-size);
+  color: var(--font-color-base);
+}
+
+.container {
+  display: block;
+  width: 100%;
+}
+
+.error {
+  font-size: small;
+  color: var(--font-color-error);
+  text-align: center;
+}
